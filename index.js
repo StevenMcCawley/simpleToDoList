@@ -24,7 +24,9 @@ const App = () => {
 
   return (
     <>
-        {todos.map((todo, i) => <Todo key={i} index={i} todo={todo} remove={removeTodo} />)}
+      {todos.map((todo, i) => (
+        <Todo key={i} index={i} todo={todo} remove={removeTodo} />
+      ))}
       <ToDoForm addTodo={addTodo} />
     </>
   );

@@ -1,10 +1,10 @@
-const ToDoForm = ({addTodo}) => {
+const ToDoForm = ({ addTodo }) => {
   const [value, setValue] = React.useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!value) return;
-    addTodo(value)
+    addTodo(value);
     setValue("");
   };
 
